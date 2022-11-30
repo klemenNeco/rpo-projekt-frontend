@@ -1,0 +1,51 @@
+#loginForm {
+    background-color: #272D48;
+    margin: 2% 25%;
+    padding: 2%;
+    border-radius: 20px;
+    font-family: 'Cabin', sans-serif
+}
+
+#loginForm h1 {
+    text-align: center;
+    font-size: 48px;
+    color: #D6376B;
+    margin: 0%;
+}
+
+#loginForm div {
+    margin: 3% 1%;
+}
+
+#loginForm label {
+    display: block;
+    font-size: 24px;
+}
+
+#loginForm input {
+    background-color: white;
+    color: black;
+    padding: 2%;
+    display: block;
+    width: 100%;
+    border-radius: 20px;
+    line-height: 2.2em;
+    border: 1px solid white;
+}
+
+#loginForm #submit {
+    background-color: #D6376B;
+    color: white;
+    font-size: 24px;
+    border-radius: 20px;
+    width: auto;
+    margin: 5% 40% 0%;
+    border: 1px solid #D6376B;
+    padding: 0px 5px;
+}
+
+#registration {
+    width: 50%;
+    margin: 0% 25%;
+    text-align: center;
+}
