@@ -1,0 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+div.vse {
+  padding: 0;
+  margin: 0;
+  --primary-color: #bf6f13;
+  --secondary-color: #e88e27;
+  font-family: "Poppins", sans-serif;
+}

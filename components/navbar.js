@@ -4,6 +4,13 @@ import styles from "./navbar.module.css";
 export default function Navbar({ children }) {
   return (
     <Layout>
+      <style jsx global>{`
+        html,
+        body {
+          margin: 0px;
+          padding: 0px;
+        }
+      `}</style>
       <div className={styles.navbar}>
         <a href="/" className="logo">
           Ticket

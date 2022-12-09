@@ -1,8 +1,11 @@
 .navbar {
+  top: 0;
   display: flex;
   justify-content: space-between;
   align-content: center;
   background-color: #272d48;
+  margin: 0 auto;
+  width: 100%;
 }
 
 .logo {
