@@ -14,31 +14,33 @@ const vsekarte = (props) => {
       `}</style>
       <Navbar />
       <div className={styles.vse}>
-        <nav>
-          <ul>
-            <li>
-              <a href="#">Štuk</a>
-            </li>
-            <li>
-              <a href="#">Trust</a>
-            </li>
-            <li>
-              <a href="#">po datomu</a>
-            </li>
-          </ul>
-        </nav>
-        <form>
-          <div className="search_btn">
-            <input
-              type="search"
-              placeholder="Ime zabave"
-              className="inputText"
-            ></input>
-            <button>
-              <i class="fa-solid fa-magnifying-glass"></i>
-            </button>
-          </div>
-        </form>
+        <div className={styles.header}>
+          <nav>
+            <ul className={styles.filther}>
+              <li>
+                <a href="#">Štuk</a>
+              </li>
+              <li>
+                <a href="#">Trust</a>
+              </li>
+              <li>
+                <a href="#">po datomu</a>
+              </li>
+            </ul>
+          </nav>
+          <form>
+            <div className="search_btn">
+              <input
+                type="search"
+                placeholder="Ime zabave"
+                className="inputText"
+              ></input>
+              <button>
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
+            </div>
+          </form>
+        </div>
         <h>hej</h>
       </div>
     </Layout>
