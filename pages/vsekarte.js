@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Layout from "../components/layout";
 import Navbar from "../components/navbar";
-import styles from "./vsekarte.module.css";
+import styles from "../styles/vsekarte.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Karta from "../components/karta";
 
