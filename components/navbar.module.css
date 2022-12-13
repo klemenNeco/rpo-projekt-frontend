@@ -1,4 +1,5 @@
 .navbar {
+<<<<<<< HEAD
     display: flex;
     justify-content: space-between;
     align-content: center;
@@ -35,3 +36,43 @@
     font-weight: bold;
   }
   
+=======
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  background-color: #272d48;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.logo {
+  margin-left: 1rem;
+  font-size: 150px;
+  font-weight: bolder;
+  color: rgba(255, 255, 255, 0.904);
+  align-content: center;
+}
+
+.ul {
+  display: flex;
+  margin: 25px;
+  color: black;
+}
+
+.item {
+  display: flex;
+}
+
+.li {
+  margin: 0 1rem;
+  list-style: none;
+  color: #00ee28;
+}
+
+.li > a {
+  text-decoration: none;
+  color: #d6376b;
+  font-weight: bold;
+}
+>>>>>>> main

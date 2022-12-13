@@ -1,0 +1,39 @@
+.top{
+    background-image: url(../slike/backgroundImg.png);
+    background-position: center;
+    height: 550px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .toptext{
+    text-align: center;
+    color: #D6376B;
+  }
+  
+  #top h1{
+    font-size: 64px!important;
+  }
+
+.buycard{
+    width: 80%;
+    height: 200px;
+    margin-top: 50px;
+    display: inline-block;
+    position: relative;
+    margin-right: 10px;
+    margin-left: 20px;
+    background-color: #272D48;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    color: white;
+}
+
+.counter{
+    position: absolute;
+    bottom: 25px;
+    right: 25px;
+}

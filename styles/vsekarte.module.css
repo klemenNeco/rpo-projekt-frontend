@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+div.vse {
+  padding: 0;
+  margin: 0;
+  --primary-color: #bf6f13;
+  --secondary-color: #e88e27;
+  font-family: "Poppins", sans-serif;
+}
+.header {
+  background-color: var(--secondary-color);
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 30px;
+  align-items: center;
+}
+
+.filther {
+  display: flex;
+}
+
+.filther li {
+  list-style: none;
+  margin-right: 1rem;
+}
+
+.filther li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 0.2rem 0.6rem;
+  position: relative;
+}
+
+.filther li a::before {
+  content: "";
+  position: absolute;
+  top: -3px;
+  left: 50%;
+  height: 3px;
+  width: 0;
+  transform: translateX(-50%);
+  background-color: var(--primary-color);
+  transition: all 0.5s;
+}
+
+.filther li a:hover:before {
+  width: 100%;
+}
+
+.filther li a:focus {
+  background-color: var(--primary-color);
+  opacity: 0.2px;
+  border-radius: 20px;
+}
+
+.filther li a:focus::before {
+  width: 0;
+}
+
+.search_btn {
+  display: flex;
+}
+
+.inputText {
+  outline: none;
+  border: 1px, solid var(black);
+  border-radius: 2rem 0 0 2rem;
+  padding: 0.3rem 1rem;
+  font-size: 1rem;
+  color: white;
+  background-color: var(--primary-color);
+}
+
+.inputText::placeholder {
+  color: white;
+}
+
+.search_btn button {
+  background-color: var(--secondary-color);
+  border: 1px solid var(black);
+}
+
+.container {
+  margin: auto;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
