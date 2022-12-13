@@ -15,12 +15,12 @@ export default function Home() {
       </div>
       <h1 className={styles.carouselname}>Štuk</h1>
       <div className={styles.carousel}>
-        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><CarouselCard /></a>
-        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><CarouselCard /></a>
-        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><CarouselCard /></a>
-        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><CarouselCard /></a>
-        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><CarouselCard /></a>
-        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><CarouselCard /></a>
+        <a href="/event"><CarouselCard /></a>
+        <a href="/event"><CarouselCard /></a>
+        <a href="/event"><CarouselCard /></a>
+        <a href="/event"><CarouselCard /></a>
+        <a href="/event"><CarouselCard /></a>
+        <a href="/event"><CarouselCard /></a>
         </div>
       </section>
     </div>
