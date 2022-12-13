@@ -3,6 +3,7 @@ import Layout from "../components/layout";
 import Navbar from "../components/navbar";
 import styles from "./vsekarte.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Karta from "../components/karta";
 
 const vsekarte = (props) => {
   return (
@@ -29,11 +30,11 @@ const vsekarte = (props) => {
             </ul>
           </nav>
           <form>
-            <div className="search_btn">
+            <div className={styles.search_btn}>
               <input
                 type="search"
                 placeholder="Ime zabave"
-                className="inputText"
+                className={styles.inputText}
               ></input>
               <button>
                 <i class="fa-solid fa-magnifying-glass"></i>
@@ -41,7 +42,33 @@ const vsekarte = (props) => {
             </div>
           </form>
         </div>
-        <h>hej</h>
+      </div>
+      <div className={styles.container}>
+        <Karta />
+        <Karta />
+        <Karta />
+        <Karta />
+        <Karta />
+        <Karta />
+        <Karta />
+        <Karta />
+        <Karta />
+        <Karta />
+        <Karta />
+        <Karta />
+        <Karta />
+        <Karta />
+        <Karta />
+        <Karta />
+        <Karta />
+        <Karta />
+        <Karta />
+        <Karta />
+        <Karta />
+        <Karta />
+        <Karta />
+        <Karta />
+        <Karta />
       </div>
     </Layout>
   );
