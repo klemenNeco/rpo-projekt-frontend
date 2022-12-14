@@ -4,6 +4,7 @@
   background-color: var(--secondary-color);
   margin: 1rem;
   border-radius: 7px;
+  margin: 35px;
   box-sizing: border-box;
   overflow: hidden;
   position: relative;

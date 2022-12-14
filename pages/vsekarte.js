@@ -1,16 +1,60 @@
+import { useState } from "react";
 import Link from "next/link";
 import Layout from "../components/layout";
 import Navbar from "../components/navbar";
 import styles from "../styles/vsekarte.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Karta from "../components/karta";
+import CarouselCard from "../components/carouselcard";
 
 const vsekarte = (props) => {
+  let štuk = false;
+  let trust = false;
+  const podatki = [
+    { klub: "ŠTUK", cena: 5, datum: "31.1.2023", naslov: "Čiga Čaga" },
+    { klub: "ŠTUK", cena: 7, datum: "12.12.2022", naslov: "STANDUP" },
+    { klub: "TRUST", cena: 4, datum: "16.12.2022", naslov: "Joker out" },
+    { klub: "ŠTUK", cena: 10, datum: "20.12.2022", naslov: "DJ-Nej" },
+    { klub: "TRUST", cena: 20, datum: "11.2.2023", naslov: "Nuci" },
+    { klub: "ŠTUK", cena: 5, datum: "31.1.2023", naslov: "Čiga Čaga" },
+    { klub: "ŠTUK", cena: 7, datum: "12.12.2022", naslov: "STANDUP" },
+    { klub: "TRUST", cena: 4, datum: "16.12.2022", naslov: "Joker out" },
+    { klub: "ŠTUK", cena: 10, datum: "20.12.2022", naslov: "DJ-Nej" },
+    { klub: "TRUST", cena: 20, datum: "11.2.2023", naslov: "Nuci" },
+    { klub: "ŠTUK", cena: 5, datum: "31.1.2023", naslov: "Čiga Čaga" },
+    { klub: "ŠTUK", cena: 7, datum: "12.12.2022", naslov: "STANDUP" },
+    { klub: "TRUST", cena: 4, datum: "16.12.2022", naslov: "Joker out" },
+    { klub: "ŠTUK", cena: 10, datum: "20.12.2022", naslov: "DJ-Nej" },
+    { klub: "TRUST", cena: 20, datum: "11.2.2023", naslov: "Nuci" },
+  ];
+  const [filtrirani, setFiltrirani] = useState(podatki);
+
+  const showStuk = (e) => {
+    e.preventDefault();
+    setFiltrirani(
+      podatki.filter((dogodek) => {
+        return dogodek.klub === "ŠTUK";
+      })
+    );
+  };
+  const showTrust = (e) => {
+    e.preventDefault();
+    setFiltrirani(
+      podatki.filter((dogodek) => {
+        return dogodek.klub === "TRUST";
+      })
+    );
+  };
+  const showVse = (e) => {
+    e.preventDefault();
+    setFiltrirani(podatki);
+  };
+
   return (
     <Layout>
       <style jsx global>{`
         body {
-          background-color: #bf6f13;
+          background-color: #d6d6d6;
         }
       `}</style>
       <Navbar />
@@ -19,13 +63,19 @@ const vsekarte = (props) => {
           <nav>
             <ul className={styles.filther}>
               <li>
-                <a href="#">Štuk</a>
+                <a href="#" onClick={showVse}>
+                  VSE
+                </a>
               </li>
               <li>
-                <a href="#">Trust</a>
+                <a href="#" onClick={showStuk}>
+                  Štuk
+                </a>
               </li>
               <li>
-                <a href="#">po datomu</a>
+                <a href="#" onClick={showTrust}>
+                  Trust
+                </a>
               </li>
             </ul>
           </nav>
@@ -37,38 +87,16 @@ const vsekarte = (props) => {
                 className={styles.inputText}
               ></input>
               <button>
-                <i class="fa-solid fa-magnifying-glass"></i>
+                <i></i>
               </button>
             </div>
           </form>
         </div>
       </div>
       <div className={styles.container}>
-        <Karta />
-        <Karta />
-        <Karta />
-        <Karta />
-        <Karta />
-        <Karta />
-        <Karta />
-        <Karta />
-        <Karta />
-        <Karta />
-        <Karta />
-        <Karta />
-        <Karta />
-        <Karta />
-        <Karta />
-        <Karta />
-        <Karta />
-        <Karta />
-        <Karta />
-        <Karta />
-        <Karta />
-        <Karta />
-        <Karta />
-        <Karta />
-        <Karta />
+        {filtrirani.map((item, index) => (
+          <Karta {...filtrirani[index]} />
+        ))}
       </div>
     </Layout>
   );
