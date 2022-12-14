@@ -21,6 +21,7 @@ export default function Home() {
         <a href="/event"><CarouselCard /></a>
         <a href="/event"><CarouselCard /></a>
         <a href="/event"><CarouselCard /></a>
+        <a href="/event"><CarouselCard /></a>
         </div>
       </section>
     </div>
