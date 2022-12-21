@@ -4,6 +4,7 @@ import { React, useState } from 'react'
 import Navbar from '../components/navbar';
 import Layout from '../components/layout';
 import Carousel from 'nuka-carousel'
+import CarouselCard from "../components/carouselcard";
    
 export default function Event() {
     const [counter, setCounter] = useState(0);
@@ -51,19 +52,39 @@ return (
     </div>
     <div className={styles.opisbody}>
         <div className={styles.opis}>
-            <h2>Kratek opis dogodka</h2>
+            <h2 className={styles.naslov}>Kratek opis dogodka</h2>
             <div>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ornare elementum risus nec sagittis. In hac habitasse platea dictumst. Suspendisse vehicula libero eu magna luctus, vel interdum nunc commodo. 
             </div>
         </div>
         <div className={styles.carousel}>
-            <Carousel defaultControlsConfig={{nextButtonText: '->', prevButtonText: '<-', pagingDotsStyle: {fill: 'none'}}} wrapAround={true}>
-                <img src="https://cdn.britannica.com/85/139485-050-BCF84C18/FIFA-World-Cup-trophy.jpg" height={200}/>
-                <img src="https://culturedvultures.com/wp-content/uploads/2022/08/Black-Clover.jpg" height={200} />
-                <img src="/backgroundImg.png" />
-                <img src="slike/backgroundImg.png" />
-                <img src="/slike/backgroundImg.png" />
+            <Carousel defaultControlsConfig={{nextButtonText: '->', prevButtonText: '<-', pagingDotsStyle: {fill: 'none'}}}>
+                <CarouselCard />
+                <CarouselCard />
+                <CarouselCard />
+                <CarouselCard />
+                <CarouselCard />
+                <CarouselCard />
+                <CarouselCard />
             </Carousel>
+        </div>
+    </div>
+
+    <div className={styles.podatkidogodek}>
+        <div className={styles.opisdogodek}>
+            <h2 className={styles.naslov}>Podatki o dogodku</h2>
+            <div>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ornare elementum risus nec sagittis. In hac habitasse platea dictumst. Suspendisse vehicula libero eu magna luctus, vel interdum nunc commodo. 
+            </div>
+        </div>
+    </div>
+
+    <div className={styles.podatkiorganizator}>
+        <div className={styles.opisorg}>
+            <h2 className={styles.naslov}>Podatki o organizatorju</h2>
+            <div>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ornare elementum risus nec sagittis. In hac habitasse platea dictumst. Suspendisse vehicula libero eu magna luctus, vel interdum nunc commodo. 
+            </div>
         </div>
     </div>
     </section>

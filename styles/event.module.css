@@ -56,21 +56,26 @@
   display:flex;
 }
 
-.opisbnody > *{
-  flex: 1;
-}
-
 .opis{
   width: 45%;
   margin-right: 5%;
   margin-left: 5%;
-  border: 3px solid red;
+  background-color: #272D48;
+  border-radius: 10px;
+  justify-content: space-between;
+  align-content: center;
+  margin-top: 25px;
+  color: white;
+}
+
+.naslov{
+  color: #D6376B;
 }
 
 .carousel {
   width: 40%;
-   height: 200px;
-  border: 3px solid red;
+  height: 200px;
+  margin-top: -25px;
 }
 
 .carousel > img{
@@ -78,4 +83,40 @@
   display: flex;
   justify-content: space-between;
   align-content: center;
+}
+
+.podatkidogodek{
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.opisdogodek{
+  width: 80%;
+  height: 250px;
+  background-color: #272D48;
+  border-radius: 10px;
+  justify-content: space-between;
+  align-content: center;
+  margin-top: 25px;
+  color: white;
+}
+
+.podatkiorganizator{
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.opisorg{
+  width: 80%;
+  height: 250px;
+  background-color: #272D48;
+  border-radius: 10px;
+  justify-content: space-between;
+  align-content: center;
+  margin-top: 25px;
+  color: white;
 }
