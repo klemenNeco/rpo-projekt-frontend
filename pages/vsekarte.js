@@ -8,10 +8,8 @@ import Karta from "../components/karta";
 import CarouselCard from "../components/carouselcard";
 
 const vsekarte = (props) => {
-  let štuk = false;
-  let trust = false;
-  const podatki = [
-    { klub: "ŠTUK", cena: 5, datum: "31.1.2023", naslov: "Čiga Čaga" },
+  let podatki = [
+    { klub: "ŠTUK", cena: 12, datum: "31.1.2023", naslov: "Brucovanje" },
     { klub: "ŠTUK", cena: 7, datum: "12.12.2022", naslov: "STANDUP" },
     { klub: "TRUST", cena: 4, datum: "16.12.2022", naslov: "Joker out" },
     { klub: "ŠTUK", cena: 10, datum: "20.12.2022", naslov: "DJ-Nej" },
@@ -27,7 +25,18 @@ const vsekarte = (props) => {
     { klub: "ŠTUK", cena: 10, datum: "20.12.2022", naslov: "DJ-Nej" },
     { klub: "TRUST", cena: 20, datum: "11.2.2023", naslov: "Nuci" },
   ];
+  podatki = podatki.sort(
+    (a, b) =>
+      new Date(...a.datum.split(".").reverse()) -
+      new Date(...b.datum.split(".").reverse())
+  );
   const [filtrirani, setFiltrirani] = useState(podatki);
+  const [search, setSearch] = useState();
+
+  const updateSearch = (e) => {
+    e.preventDefault();
+    setSearch(e.target.value.toLowerCase());
+  };
 
   const showStuk = (e) => {
     e.preventDefault();
@@ -48,6 +57,15 @@ const vsekarte = (props) => {
   const showVse = (e) => {
     e.preventDefault();
     setFiltrirani(podatki);
+  };
+
+  const findSimilar = (e) => {
+    e.preventDefault();
+    setFiltrirani(
+      podatki.filter((dogodek) => {
+        return dogodek.naslov.toLowerCase().includes(search);
+      })
+    );
   };
 
   return (
@@ -85,8 +103,9 @@ const vsekarte = (props) => {
                 type="search"
                 placeholder="Ime zabave"
                 className={styles.inputText}
+                onChange={updateSearch}
               ></input>
-              <button>
+              <button onClick={findSimilar}>
                 <i></i>
               </button>
             </div>
@@ -95,7 +114,7 @@ const vsekarte = (props) => {
       </div>
       <div className={styles.container}>
         {filtrirani.map((item, index) => (
-          <Karta {...filtrirani[index]} />
+          <CarouselCard {...filtrirani[index]} />
         ))}
       </div>
     </Layout>

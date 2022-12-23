@@ -20,7 +20,6 @@ const Karta = (props) => {
             <h4 className={styles.naslov}>{props.naslov}</h4>
             <p className={styles.ocena}>{props.cena}€</p>
           </div>
-          <div className={styles.opis}></div>
         </div>
       </div>
     </div>

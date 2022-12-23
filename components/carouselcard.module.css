@@ -15,6 +15,7 @@
 .itemText {
   width: 350px;
   height: 80px;
+  color: white;
   background-color: #272d48;
   position: absolute;
   bottom: 0px;
