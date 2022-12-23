@@ -13,7 +13,7 @@ const cabin = Cabin({
 export default function Home() {
   return (
     <Layout>
-    <div className={styles.container}>
+      <div className={styles.container}>
       <Navbar></Navbar>
       <section id={styles.top}>
       <div className={styles.top}>

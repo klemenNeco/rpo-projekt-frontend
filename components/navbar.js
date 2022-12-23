@@ -13,7 +13,7 @@ export default function Navbar({ children }) {
       `}</style>
       <div className={styles.navbar}>
         <a href="/" className="logo">
-          Ticket
+          vstopnice.si
         </a>
         <nav className={styles.item}>
           <ul className={styles.ul}>

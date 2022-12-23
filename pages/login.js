@@ -10,16 +10,18 @@ export default function Login() {
         <Navbar />
         <section id={styles.loginForm}>
           <h1>Prijava</h1>
-          <form action="submit">
+          <form action="submit" className={styles.logForm}>
             <div>
               <label htmlFor="username">uporabniško ime</label>
-              <input type="text" name="username" id="username" />
+              <input type="text" name="username" id="username" className={styles.inputField}/>
             </div>
             <div>
               <label htmlFor="password">geslo</label>
-              <input type="password" name="password" id="password" />
+              <input type="password" name="password" id="password" className={styles.inputField}/>
             </div>
-            <input type="submit" value="Prijava" id="submit" />
+            <div>
+              <input type="submit" value="Prijava" id="submit" />
+            </div>
           </form>
         </section>
         <section id={styles.registration}>
@@ -32,9 +34,6 @@ export default function Login() {
             <div>Apple</div>
           </div>
         </section>
-        <h1>
-          <Link href="/">Nazaj domov</Link>
-        </h1>
       </div>
     </Layout>
   );

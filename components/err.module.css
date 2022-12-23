@@ -1,0 +1,21 @@
+.box {
+    background-color: #272D48;
+    width: 50%;
+    margin: 5% auto;
+    border-radius: 20px;
+}
+
+.errNo {
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 5em;
+    padding: 5% 2%;
+}
+
+.errText {
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 2em;
+    margin: 2%;
+    padding: 3%;
+}

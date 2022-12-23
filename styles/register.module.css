@@ -1,32 +1,31 @@
-#loginForm {
+#registerForm {
     background-color: #272D48;
     margin: 2% 25%;
-    padding: 5%;
+    padding: 2%;
     border-radius: 20px;
 }
 
-.logForm {
-    width: auto;
-}
-
-#loginForm h1 {
+#registerForm h1 {
     text-align: center;
     font-size: 48px;
     color: #D6376B;
     margin: 0%;
 }
 
-#loginForm div {
+#registerForm div {
     margin: 3% 1%;
 }
 
-#loginForm label {
-    display: block;
+#registerForm label {
     font-size: 24px;
-    color: white;
+    color: #fff;
 }
 
-#loginForm .inputField {
+#list {
+    color:#D6376B;
+}
+
+#registerForm .inputField {
     background-color: white;
     color: black;
     padding: 2%;
@@ -37,8 +36,11 @@
     border: 1px solid white;
 }
 
-#registration {
-    width: 50%;
-    margin: 0% 25%;
-    text-align: center;
-}
+/*#registerForm .check {
+    font-size: 8px;
+    display: inline;
+    width: auto;
+    color: #272D48;
+    border: 2px solid #D6376B;
+    margin: 1%;
+}*/
