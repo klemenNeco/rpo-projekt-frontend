@@ -5,6 +5,7 @@ import Navbar from "../components/navbar";
 import styles from "../styles/vsekarte.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Karta from "../components/karta";
+p;
 import CarouselCard from "../components/carouselcard";
 
 const vsekarte = (props) => {
