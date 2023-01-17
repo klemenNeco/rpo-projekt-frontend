@@ -48,8 +48,36 @@
   width: max-content;
 }
 
-.counter{
-    position: absolute;
+.button {
+  text-decoration: none;
+  background-color: #D6376B;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  border-radius: 10px;
+  border-width: 0;
+}
+.kupi {
+  text-decoration: none;
+  background-color: #D6376B;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  border-radius: 10px;
+  border-width: 0;
+}
+
+#counterNum {
+  text-decoration: none;
+  background-color: White;
+  color: black;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  border-radius: 10px;
+  border-width: 0;
 }
 
 .opisbody{
@@ -119,4 +147,15 @@
   align-content: center;
   margin-top: 25px;
   color: white;
+}
+
+.row {
+  display: flex;
+  margin-top: 2.5%;
+  margin-left: 20%;
+  font-size: 24px;
+}
+
+.column {
+  flex: 50%;
 }

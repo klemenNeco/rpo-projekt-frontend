@@ -41,11 +41,11 @@ return (
                     
                     Količina:
                     <div className={styles.counter}>
-                        <button onClick={decrease}>-</button> 
-                        <button className="counter__output">{counter}</button>
-                        <button onClick={increase}>+</button>
-                        <button className={styles.kupi}>Kupi Zdaj</button>
-                    </div>
+                        <button className={styles.button} onClick={decrease}>-</button> 
+                        <button className="counter__output" id={styles.counterNum}>{counter}</button>
+                        <button className={styles.button} onClick={increase}>+</button>
+                    </div>                    
+                    <a href="/cart"><button className={styles.kupi}>Kupi Zdaj</button></a>
                 </div>
             </div>
         </div>
@@ -73,8 +73,21 @@ return (
     <div className={styles.podatkidogodek}>
         <div className={styles.opisdogodek}>
             <h2 className={styles.naslov}>Podatki o dogodku</h2>
-            <div>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ornare elementum risus nec sagittis. In hac habitasse platea dictumst. Suspendisse vehicula libero eu magna luctus, vel interdum nunc commodo. 
+            <div className={styles.row}>
+                <div className={styles.column}>
+                    <p>Lokacija dogodka</p>
+                    <p>Čas začetka dogodka</p>
+                    <p>Cena vstopnice</p>
+                    <p>Starostna omejitve</p>
+                    <p>Podatek 5?</p>
+                </div>
+                <div className={styles.column}>
+                    <p>API podatek</p>
+                    <p>API podatek</p>
+                    <p>API podatek</p>
+                    <p>API podatek</p>
+                    <p>API podatek</p>
+                </div>
             </div>
         </div>
     </div>
@@ -82,8 +95,21 @@ return (
     <div className={styles.podatkiorganizator}>
         <div className={styles.opisorg}>
             <h2 className={styles.naslov}>Podatki o organizatorju</h2>
-            <div>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ornare elementum risus nec sagittis. In hac habitasse platea dictumst. Suspendisse vehicula libero eu magna luctus, vel interdum nunc commodo. 
+            <div className={styles.row}>
+                <div className={styles.column}>
+                    <p>Ime organizatorja</p>
+                    <p>Naslov sedeža</p>
+                    <p>e-poštni naslov</p>
+                    <p>Podatek 4?</p>
+                    <p>Podatek 5?</p>
+                </div>
+                <div className={styles.column}>
+                    <p>API podatek</p>
+                    <p>API podatek</p>
+                    <p>API podatek</p>
+                    <p>API podatek</p>
+                    <p>API podatek</p>
+                </div>
             </div>
         </div>
     </div>
