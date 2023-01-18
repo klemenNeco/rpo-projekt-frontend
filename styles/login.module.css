@@ -42,3 +42,20 @@
     margin: 0% 25%;
     text-align: center;
 }
+
+.icons {
+    display: flex;
+    width: fit-content;
+    margin: 1% auto;
+    gap: 10px;
+}
+
+.icons div {
+    background-color: #272D48;
+    color: white;
+    font-size: 2em;
+    border-radius: 50%;
+    padding-top: 13px;
+    width: 2em;
+    height: 2em;
+}

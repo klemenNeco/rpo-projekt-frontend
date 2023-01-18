@@ -4,6 +4,7 @@ import Layout from "../components/layout";
 import Navbar from "../components/navbar";
 import styles from "../styles/vsekarte.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons'
 import Karta from "../components/karta";
 
 import CarouselCard from "../components/carouselcard";
@@ -71,11 +72,6 @@ const vsekarte = (props) => {
 
   return (
     <Layout>
-      <style jsx global>{`
-        body {
-          background-color: #d6d6d6;
-        }
-      `}</style>
       <Navbar />
       <div className={styles.vse}>
         <div className={styles.header}>
@@ -83,7 +79,7 @@ const vsekarte = (props) => {
             <ul className={styles.filther}>
               <li>
                 <a href="#" onClick={showVse}>
-                  VSE
+                  Vse
                 </a>
               </li>
               <li>
@@ -106,8 +102,8 @@ const vsekarte = (props) => {
                 className={styles.inputText}
                 onChange={updateSearch}
               ></input>
-              <button onClick={findSimilar}>
-                <i></i>
+              <button onClick={findSimilar} id={styles.search}>
+                <i><FontAwesomeIcon icon={faMagnifyingGlass} /></i>
               </button>
             </div>
           </form>

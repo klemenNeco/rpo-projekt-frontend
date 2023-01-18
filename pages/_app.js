@@ -1,4 +1,5 @@
 // pages/_app.js
+import '@fortawesome/fontawesome-svg-core/styles.css'
 import { config } from '@fortawesome/fontawesome-svg-core'
 import { Cabin } from '@next/font/google'
 import '../styles/globals.css'

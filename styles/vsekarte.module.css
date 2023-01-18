@@ -1,12 +1,12 @@
 div.vse {
   padding: 0;
   margin: 0;
-  --primary-color: #272d48;
-  --secondary-color: #4b4b4b;
+  --primary-color: #272D48;
+  --secondary-color: #FFF;
   font-family: "Poppins", sans-serif;
 }
 .header {
-  background-color: var(--secondary-color);
+  background-color: var(--primary-color);
   height: 100px;
   border-radius: 40px;
   width: 80%;
@@ -16,7 +16,7 @@ div.vse {
   justify-content: space-around;
   margin-bottom: 30px;
   align-items: center;
-  color: #d6d6d6;
+  color: #FFF;
 }
 
 .filther {
@@ -69,7 +69,7 @@ div.vse {
 
 .inputText {
   outline: none;
-  border: 1px, solid var(black);
+  border: 1px solid #D6376B;
   border-radius: 2rem 0 0 2rem;
   padding: 0.3rem 1rem;
   font-size: 1rem;
@@ -82,8 +82,9 @@ div.vse {
 }
 
 .search_btn button {
-  background-color: var(--secondary-color);
-  border: 1px solid var(black);
+  background-color: #D6376B;
+  border: 1px solid #D6376B;
+  border-radius: 0 2rem 2rem 0
 }
 
 .container {
@@ -91,4 +92,5 @@ div.vse {
   width: 80%;
   display: flex;
   flex-wrap: wrap;
+  background-color: #FFF;
 }

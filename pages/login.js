@@ -2,6 +2,8 @@ import Link from "next/link";
 import Layout from "../components/layout";
 import styles from "../styles/login.module.css";
 import Navbar from "../components/navbar";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFacebook, faGoogle, faApple } from '@fortawesome/free-brands-svg-icons'
 
 export default function Login() {
   return (
@@ -29,9 +31,11 @@ export default function Login() {
           <hr />
           <div>
             ali pa se prijavi s pomočjo naslednjih metod
-            <div>Google</div>
-            <div>Facebook</div>
-            <div>Apple</div>
+            <div className={styles.icons}>
+              <div><FontAwesomeIcon icon={faGoogle} /></div>
+              <div><FontAwesomeIcon icon={faFacebook} /></div>
+              <div><FontAwesomeIcon icon={faApple} /></div>
+            </div>
           </div>
         </section>
       </div>
